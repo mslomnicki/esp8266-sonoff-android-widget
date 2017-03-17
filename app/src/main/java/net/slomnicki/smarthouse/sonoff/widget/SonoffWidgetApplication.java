@@ -22,18 +22,9 @@ public class SonoffWidgetApplication extends Application {
         return mApi;
     }
 
-    public Retrofit getRetrofit() {
-        return mRetrofit;
-    }
-
     public static ApplicationApi getApi(Context context) {
         SonoffWidgetApplication application = (SonoffWidgetApplication) context.getApplicationContext();
         return application.getApi();
-    }
-
-    public static Retrofit getRetrofit(Context context) {
-        SonoffWidgetApplication application = (SonoffWidgetApplication) context.getApplicationContext();
-        return application.getRetrofit();
     }
 }
 
